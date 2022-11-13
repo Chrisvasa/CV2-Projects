@@ -1,0 +1,60 @@
+:root {
+  --header-bg: #52616b;
+  --nav-bg: #1e2022;
+  --main-bg: #f0f5f9;
+  --footer-bg: #c9d6df;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background: var(--main-bg);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  height: 30vh;
+  min-width: 385px;
+  max-width: 500px;
+  border: 1px solid black;
+}
+
+.game-container h2 {
+  font-size: 2rem;
+  font-family: monospace;
+}
+
+.game-container p {
+  font-size: 1.2rem;
+}
+
+.button {
+  height: 35px;
+  width: 90%;
+  font-size: 1em;
+  font-weight: bold;
+  border-radius: 999px;
+  background-color: #fff;
+}
