@@ -61,10 +61,16 @@ function pointCalculator(winner) {
     if (winner == playerWin) {
         playerPoints += 1;
         document.querySelector('.score-output-player').innerHTML = playerPoints;
+        if (playerPoints == 10) {
+            alert("Player has won");
+        }
     }
     else if (winner == computerWin) {
         computerPoints += 1;
         document.querySelector('.score-output-computer').innerHTML = computerPoints;
+        if (computerPoints == 10) {
+            alert("Computer has won")
+        }
     }
     else {
         return;

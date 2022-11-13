@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background: #222831;
 }
@@ -7,14 +13,28 @@ body {
   flex-direction: column;
   align-items: center;
   min-width: 385px;
-  border: 1px solid black;
-  background: #393e46;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header h2 {
+  font-size: 60px;
+  font-family: monospace;
+}
+
+header p {
+  font-size: 24px;
+  color: white;
 }
 
 .play-area {
-  width: 100%;
+  width: 40vw;
+  min-width: 550px;
   background: #eeeeee;
-  border: 1px solid gray;
 }
 
 .play-area h3 {
@@ -28,7 +48,7 @@ body {
 }
 
 .pick {
-  background-color: #00adb5;
+  background-color: #a0a0a0;
   margin: 0;
 }
 
@@ -66,10 +86,13 @@ body {
   display: flex;
   justify-content: space-evenly;
   width: 20%;
+  font-size: 2rem;
+  font-weight: 600;
+  color: white;
 }
 
 .current {
-  font-size: 1.8em;
+  font-size: 3em;
 }
 
 .scoreboard p {
